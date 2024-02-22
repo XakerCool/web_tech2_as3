@@ -1,1 +1,0 @@
-Swagger by OMUR-ULUKMAN
