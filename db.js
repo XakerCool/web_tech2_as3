@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 const mysql = require('mysql2');
 
 // Create a connection pool
@@ -13,3 +14,20 @@ const pool = mysql.createPool({
 
 // Export the pool for reuse in other modules
 module.exports = pool.promise();
+=======
+const mysql = require('mysql2');
+
+// Create a connection pool
+const pool = mysql.createPool({
+    host: 'localhost',
+    user: 'root',
+    password: 'root',
+    database: 'library',
+    waitForConnections: true,
+    connectionLimit: 10,
+    queueLimit: 0
+});
+
+// Export the pool for reuse in other modules
+module.exports = pool.promise();
+>>>>>>> 32c421696ef396f125a906c42046d77cbcddcc7e

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 generator client {
   provider = "prisma-client-js"
 }
@@ -40,3 +41,38 @@ datasource db {
   provider = "mysql"
   url      = "mysql://root:root@localhost:3306/library"
 }
+=======
+generator client {
+  provider = "prisma-client-js"
+}
+
+model AuthorBook {
+  author_id Int @id
+  book_id   Int
+}
+
+model Genres {
+  genre_id   Int     @id @default(autoincrement())
+  genre_name String?
+}
+
+model Books {
+  book_id      Int      @id @default(autoincrement())
+  title        String?
+  publish_year DateTime
+  page_count   Int
+  price        Decimal
+}
+
+model Authors {
+  author_id Int      @id @default(autoincrement())
+  name      String?
+  surname   String?
+  birthday  DateTime
+}
+
+datasource db {
+  provider = "mysql"
+  url      = "mysql://root:root@localhost:3306/library"
+}
+>>>>>>> 32c421696ef396f125a906c42046d77cbcddcc7e

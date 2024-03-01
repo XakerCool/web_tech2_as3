@@ -65,6 +65,7 @@ exports.addBook = async (req, res) => {
     );
     const book = req.body;
     await bookService.addBook(book);
+<<<<<<< HEAD
     // const message = "New book was created";
 
     // const targetNumber = "+77755762752"; // Replace with the actual phone number
@@ -75,6 +76,18 @@ exports.addBook = async (req, res) => {
       //   from: "whatsapp:+16814994220", // Replace with your Twilio phone number
       //   to: `whatsapp:${targetNumber}`,
       // });
+=======
+    const message = "New book was created";
+
+    const targetNumber = "+77755762752"; // Replace with the actual phone number
+
+    try {
+      await client.messages.create({
+        body: message,
+        from: "whatsapp:+16814994220", // Replace with your Twilio phone number
+        to: `whatsapp:${targetNumber}`,
+      });
+>>>>>>> 32c421696ef396f125a906c42046d77cbcddcc7e
 
       res.json({ success: true, message: "Book added successfully" });
       await infoLog(

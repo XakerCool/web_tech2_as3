@@ -1,6 +1,15 @@
+<<<<<<< HEAD
 {
     "singleQuote": true,
     "semi": false,
     "tabWidth": 2,
     "printWidth": 80
 }
+=======
+{
+    "singleQuote": true,
+    "semi": false,
+    "tabWidth": 2,
+    "printWidth": 80
+}
+>>>>>>> 32c421696ef396f125a906c42046d77cbcddcc7e
