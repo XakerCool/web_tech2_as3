@@ -23,7 +23,7 @@ router.get("/facebook", async (req, res) => {
     function (err, html) {
       if (err) {
         res.writeHead(500, { "Content-Type": "text/plain" });
-        res.end("Server internal error");
+        res.end("Server internal error  ");
       } else {
         res.writeHead(200, { "Content-Type": "text/html" });
         res.end(html);
